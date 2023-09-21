@@ -1,6 +1,6 @@
-# Pingy - The Rockstar of Ping
+# Pingi - The Rockstar of Ping
 
-Pingy is a Python-based application that visualizes ping latency over time. It's like watching the universe expand, but with more immediate feedback.
+Pingi is a Python-based application that visualizes ping latency over time. It's like watching the universe expand, but with more immediate feedback.
 
 ## Features
 
@@ -14,19 +14,19 @@ Pingy is a Python-based application that visualizes ping latency over time. It's
 
 ### Script Version
 
-1. Clone the repository or download the `pingy.py` file.
+1. Clone the repository or download the `Pingi.py` file.
 2. Install the required Python packages:
     ```
     pip install ping3 matplotlib
     ```
 3. Run the script:
     ```
-    python pingy.py [host]
+    python Pingi.py [host]
     ```
 
 ### Stand-alone Executable Version
 
-1. Download the `pingy.exe` file from the releases section.
+1. Download the `Pingi.exe` file from the releases section.
 2. Place within your system PATH and run from cli.
 3. Alternatively double-click to run. No installation required.
 
@@ -37,11 +37,11 @@ Pingy is a Python-based application that visualizes ping latency over time. It's
 
 Run the script with an optional host argument:
 ```
-python pingy.py google.com
+python Pingi.py google.com
 ```
 Or without any arguments to be prompted for the host:
 ```
-python pingy.py
+python Pingi.py
 ```
 
 ### Stand-alone Executable Version
