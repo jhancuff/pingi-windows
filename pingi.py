@@ -115,7 +115,13 @@ canvas_widget.grid(row=2, column=0)
 
 pause_button = tk.Button(frame, text="Pause", command=toggle_pause)
 pause_button.grid(row=3, column=0, sticky=tk.W)
+def on_closing():
+    global is_paused  # Because we're messing with the fabric of reality here
+    is_paused = True  # Pause the update thread
+    root.quit()       # End the Tkinter main loop
+    root.destroy()    # Destroy the window
 
+root.protocol("WM_DELETE_WINDOW", on_closing)
 exit_button = tk.Button(frame, text="Exit", command=root.quit)
 exit_button.grid(row=3, column=1, sticky=tk.E)
 options = [250, 500, 750, 1000]
